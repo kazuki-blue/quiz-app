@@ -35,6 +35,10 @@ quiz-app/
 
 - コミットメッセージは日本語で書く
 
+## GitHubリポジトリ
+
+https://github.com/kazuki-blue/quiz-app
+
 ## 開発ルール
 
 - 外部ライブラリ・フレームワークは使用しない（バニラ HTML/CSS/JS のみ）
