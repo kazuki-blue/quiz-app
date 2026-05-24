@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>一般常識クイズ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- スタート画面 -->
+    <div id="start-screen" class="screen">
+      <div class="logo">&#x1F4D6;</div>
+      <h1>一般常識クイズ</h1>
+      <p class="subtitle">全5問・4択形式</p>
+      <button id="start-btn" class="btn">スタート</button>
+    </div>
+
+    <!-- クイズ画面 -->
+    <div id="quiz-screen" class="screen hidden">
+      <div class="progress-area">
+        <span id="question-number">問題 1 / 5</span>
+        <div class="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+      </div>
+      <div class="question-box">
+        <p id="question-text"></p>
+      </div>
+      <div id="choices" class="choices"></div>
+      <div id="feedback" class="feedback hidden">
+        <span id="feedback-icon"></span>
+        <span id="feedback-text"></span>
+      </div>
+      <button id="next-btn" class="btn hidden">次の問題へ &rarr;</button>
+    </div>
+
+    <!-- 結果画面 -->
+    <div id="result-screen" class="screen hidden">
+      <h2>クイズ終了！</h2>
+      <div class="score-box">
+        <p class="score-label">あなたのスコア</p>
+        <p class="score">
+          <span id="score-num">0</span>
+          <span class="score-denom"> / 5</span>
+        </p>
+        <p class="score-unit">問正解</p>
+      </div>
+      <p id="result-message" class="result-message"></p>
+      <button id="retry-btn" class="btn">もう一度挑戦する</button>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
